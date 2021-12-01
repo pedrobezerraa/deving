@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecione...</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">  
+    <link rel="stylesheet" href="css/styles3.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Selecione o local que deseja coletar resíduos</h1>
+    </br>
+        <form method="post" action="cadastrar-enquete.php">
+            <select name="local">
+            <option value="Selecione o local">Selecione o local</option>
+            <option value="Olinda">Olinda</option>
+            <option value="Recife">Recife</option>
+            <option value="Jaboatão dos Guararapes">Jaboatão dos Guararapes</option>
+            <option value="Petrolina">Petrolina</option>
+            <option value="Paulista">Paulista</option> 
+            </select>
+
+        </br> 
+    <input type="button" onclick="location.href='recife.html'" value="Pesquisar">
+    </div>
+</body>
+</html>

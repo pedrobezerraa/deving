@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">  
+    <link rel="stylesheet" href="css/styles5.css">
+    <script>type="text/javascrip"
+        var db = openDatabase("Meubanco","2.0", "Mybase", 4048);
+        db.transaction(function(criar){
+            criar.executeSql("CREATE TABLE users (ID PRIMARY KEY, nome TEXT, senha TEXT)");
+        });
+
+        function salvar(){
+            var local = document.getElementById('text').value;
+            var qtd = document.getElementById('select').value;
+            db.transaction(function(armazenar){
+                armazenar.executeSql("INSERT INTO user (text,select) VALUES(?,?)", [text,select]);
+
+
+    </script>
+</head>
+<body>
+    <div id="login-container">
+        <h1>Digite onde existem residuos e marque a quantidade acumulada</h1>
+      </br>
+  <input type="text" placeholder="Pesquise">
+</div>
+<div id="login-container">
+            <select name="local">
+            <option value="Selecione a quantidade">Selecione a quantidade</option>
+           <p> <option value="muito">Muito</option>> </p>
+           <p> <option value="Pouco">Pouco</option> </p>
+            </select>
+</div>
+ </br>
+ <input type="button" onclick="location.href='final.html'" value="Enviar">
+    </form>
+</body>
+</html>
